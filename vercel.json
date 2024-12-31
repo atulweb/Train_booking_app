@@ -3,11 +3,17 @@
     "builds": [
       {
         "src": "train-booking-frontend/package.json",
-        "use": "@vercel/next"
+        "use": "@vercel/next",
+        "config": {
+          "rootDirectory": "train-booking-frontend"
+        }
       }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "train-booking-frontend/$1" }
+      {
+        "src": "/(.*)",
+        "dest": "train-booking-frontend/$1"
+      }
     ]
   }
   
