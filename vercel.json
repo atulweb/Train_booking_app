@@ -1,10 +1,5 @@
 {
-    "projects": [
-      {
-        "name": "train-booking-frontend",
-        "directory": "train-booking-frontend"
-      }
-    ],
+    "version": 2,
     "builds": [
       {
         "src": "train-booking-frontend/package.json",
