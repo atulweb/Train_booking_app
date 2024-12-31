@@ -1,1 +1,18 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+    "projects": [
+      {
+        "name": "train-booking-frontend",
+        "directory": "train-booking-frontend"
+      }
+    ],
+    "builds": [
+      {
+        "src": "train-booking-frontend/package.json",
+        "use": "@vercel/next"
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "train-booking-frontend/$1" }
+    ]
+  }
+  
